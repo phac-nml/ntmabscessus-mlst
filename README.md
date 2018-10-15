@@ -40,3 +40,17 @@ To clean up the original files I did the following:
     
     prename 's/\.fasta\.new/\.tfa/' *.fasta.new
     ```
+
+2. Fix Profiles
+
+    ```bash
+    dos2unix ntmabscessus.txt.new
+
+    # Convert to tab-delimited
+    sed -i -e 's/,/\t/g' ntmabscessus.txt.new
+
+    # Move ST column to first column
+    cut -f 16 ntmabscessus.txt.new > /tmp/ST
+    cut --complement -f 16 ntmabscessus.txt.new > /tmp/REST
+    paste /tmp/ST /tmp/REST > ntmabscessus.txt
+    ```
