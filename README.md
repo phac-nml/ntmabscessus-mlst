@@ -27,10 +27,10 @@ To clean up the original files I did the following:
     sed -i -e 's/_[TCE].*//' hsp.fasta.tfa
     
     # Some additional cleanup on rpoB
-    sed -i -e 's/_[ES].*//' rpoB.fasta.tfa
+    sed -i -e 's/_[ESJ].*//' rpoB.fasta.tfa
     
     # Some additional cleanup on erm
-    sed -i -e 's/_[ESm].*//' erm.fasta.tfa
+    sed -i -e 's/_[ESCQ].*//' erm.fasta.tfa
     
     # Manually fix up non-printable characters in rrl
     
