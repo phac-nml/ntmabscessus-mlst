@@ -24,7 +24,7 @@ To clean up the original files I did the following:
     sed -i -e 's/_WT.*//' *.fasta.tfa
     
     # Some additional cleanup on hsp
-    sed -i -e 's/_[TCE].*//' hsp.fasta.tfa
+    sed -i -e 's/_[TCG].*//' hsp.fasta.tfa
     
     # Some additional cleanup on rpoB
     sed -i -e 's/_[ESJ].*//' rpoB.fasta.tfa
