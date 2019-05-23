@@ -4,7 +4,7 @@ This repository contains a 15 gene MLST scheme for *Mycobacterium absecssus* dev
 
 # Usage
 
-Please see the [Installation](#installation) instructions below for how to get this scheme setup before continuing with the below steps.
+Please see the [Installation][installation] instructions below for how to get this scheme setup before continuing with the below steps.
 
 ## Command-line MLST
 
@@ -17,12 +17,11 @@ mlst --scheme mab_mabscessus input/*.fasta > output.txt
 You will likely have to set the scheme explicitly `--scheme mab_mabscessus` as other schemes in PubMLST may match your input files. The final output file will look something like:
 
 ```
-column -s$'\t' -t output.txt 
 input/SRR6388757.fasta  mab_mabscessus  49  hsp(1)  erm(1)   rrl(1)  rrs(1)  arr(8)  argH(4)  cya(5)  gnd(1)  murC(2)  pta(10)  purH(2)  rpoB(1)  gyrA(8)   gyrB(7)   recA(9)
 input/SRR6388758.fasta  mab_mabscessus  43  hsp(1)  erm(14)  rrl(1)  rrs(1)  arr(6)  argH(1)  cya(4)  gnd(3)  murC(2)  pta(2)   purH(4)  rpoB(1)  gyrA(15)  gyrB(14)  recA(1)
 ```
 
-See the installation documentation below for how to get this scheme installed.
+See the [Installation][installation] documentation below for how to get this scheme installed.
 
 ## Galaxy
 
@@ -69,7 +68,7 @@ Please install the [Galaxy MLST Tool][galaxy-mlst] in Galaxy.
 
 ### 2. Install this MLST scheme
 
-To install a new MLST scheme you will have to find the location that the MLST tool is installed using conda. By default, the Galaxy version of conda is in `galaxy/database/dependencies/_conda` (if this does not exist, please check the `galaxy/config/galaxy.yml` file for the location of conda).
+To install a new MLST scheme you will have to find the location that the MLST tool is installed using [conda][] by Galaxy. By default, the Galaxy version of conda is in `galaxy/database/dependencies/_conda` (if this does not exist, please check the `galaxy/config/galaxy.yml` file for the location of conda).
 
 Once you've found this directory, please first add the `conda` binary to your `PATH` and activate the `conda` environment containing MLST.
 
@@ -107,7 +106,9 @@ To verify the scheme is installed you can run the Galaxy **MLST List** tool:
 
 You should see **mab_mabscessus** in the output if it is properly installed.
 
+[installation]: #installation
 [mlst]: https://github.com/tseemann/mlst
+[conda]: https://bioconda.github.io/
 [galaxy]: https://galaxyproject.org/
 [galaxy-mlst]: https://toolshed.g2.bx.psu.edu/view/iuc/mlst/1f5641a52664
 [galaxy-mlst-list.png]: doc/images/galaxy-mlst-list.png
