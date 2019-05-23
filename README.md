@@ -106,6 +106,10 @@ To verify the scheme is installed you can run the Galaxy **MLST List** tool:
 
 You should see **mab_mabscessus** in the output if it is properly installed.
 
+# Citation
+
+The manuscript is in preparation.
+
 [installation]: #installation
 [mlst]: https://github.com/tseemann/mlst
 [conda]: https://bioconda.github.io/
