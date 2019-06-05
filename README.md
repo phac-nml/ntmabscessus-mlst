@@ -1,6 +1,10 @@
 # MAB MLST Scheme for Mycobacterium absecssus
 
-This repository contains a 15 gene MLST scheme for *Mycobacterium absecssus* developed by Meenu Sharma, Michelle Wuzinski, Aneta Bak and others.
+This repository contains a novel 15 gene MLST scheme for *Mycobacterium absecssus*.
+
+# Citation
+
+> Wuzinski M, Bak AK, Demczuk WHB, Petkau A, Soualhine H, Sharma MK. *In preparation*.
 
 # Usage
 
@@ -105,10 +109,6 @@ To verify the scheme is installed you can run the Galaxy **MLST List** tool:
 ![galaxy-mlst-list.png][]
 
 You should see **mab_mabscessus** in the output if it is properly installed.
-
-# Citation
-
-The manuscript is in preparation.
 
 [installation]: #installation
 [mlst]: https://github.com/tseemann/mlst
