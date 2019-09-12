@@ -4,7 +4,7 @@ This repository contains a novel 15 gene MLST scheme for *Mycobacterium absecssu
 
 # Citation
 
-> Wuzinski M, Bak AK, Demczuk WHB, Petkau A, Soualhine H, Sharma MK. *In preparation*.
+> Wuzinski M, Bak AK, Petkau A, Demczuk WH, Soualhine H, Sharma MK. [A multilocus sequence typing scheme for Mycobacteriumabscessus complex (MAB‑multilocus sequence typing) using whole‑genome sequencing data](https://doi.org/10.4103/ijmy.ijmy_106_19). *Int J Mycobacteriol* 2019;8:273‑80. doi:[10.4103/ijmy.ijmy_106_19](https://doi.org/10.4103/ijmy.ijmy_106_19).
 
 # Usage
 
