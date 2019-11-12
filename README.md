@@ -45,7 +45,23 @@ To use this scheme with [Galaxy][galaxy] and the [Galaxy MLST Tool][galaxy-mlst]
 
 To use with Torsten's [mlst][] software please copy the contents of this repository to to `db/pubmlst/` and run `mlst/scripts/mlst-make_blast_db` (see instructions at <https://github.com/tseemann/mlst#adding-a-new-scheme>). The scheme will be named **mab_mabsecssus** in the `mlst` software.
 
-For example:
+### Finding the `db/pubmlst/` directory
+
+To find the `db/pubmlst/` directory you can run `mlst --help` and look for the information on the **--datadir** option. For example:
+
+```
+mlst --help
+...
+PATHS
+  --blastdb [X]     BLAST database (default '/home/CSCScience.ca/apetkau/miniconda3/envs/mlst/db/blast/mlst.fa')
+  --datadir [X]     PubMLST data (default '/home/CSCScience.ca/apetkau/miniconda3/envs/mlst/db/pubmlst')
+```
+
+Here, I can see that the full path to `db/pubmlst` directory is `/home/CSCScience.ca/apetkau/miniconda3/envs/mlst/db/pubmlst`.
+
+### Installing the scheme
+
+Once you've found the full path to `db/pubmlst` you can install the scheme with the following commands:
 
 ```bash
 cd db/pubmlst/
